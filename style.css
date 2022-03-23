@@ -1,67 +1,66 @@
-.container {
-    padding: 10px 40px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-.image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    max-width: 400px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: -40px;
-}
-.ml-img {
-    margin-top: 0;
-}
-p, h1, h3 {
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background: #1d0d01; 
+    font-family: 'VT323', monospace;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 5%;
     text-align: center;
-    font-family: 'Questrial', sans-serif;
-    color: #e1e1e1;
-    line-height: 1.5em;
-}
-.back, .back2 {
-    z-index: 999;
-    position: relative;
-}
-.back2 {
-    padding-top: 300px;
-}
-.rotate {
-    animation: rotation 40s infinite linear;
-}
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-        }
-to {
-    transform: rotate(359deg);
-}
 }
 
-@media only screen and (max-width: 980px) {
-
+a:link, a:visited {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
-    p {
-        font-size: 0.9em;
-    }
-    h1, h3 {
-        font-size: 1.3em;
-    }
-    .image {
-        max-width: 250px;
-    }
-    .back2 {
-        padding-top: 170px;
-    }
+a:hover {
+  color: orange;
+  opacity: .90;
 }
-.animate__animated.animate__bounceIn {
---animate-duration: 8s;
---animate-delay: 4s;
+
+a:active {
+  color: rgb(255, 230, 0);
+}
+
+div {
+  display: inline-block;
+  padding: 10px;
+}
+
+.typed-out {
+  margin: auto;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;  
+}
+
+.p1 {
+  animation: 
+    typing 1s steps(24, end) forwards;
+  animation-delay: 0s;
+}
+
+.p2 {
+  animation:
+    typing 4.5s steps(89, end) forwards;
+  animation-delay: 1s;
+}
+
+.p3 {
+  animation:
+    typing 1.3s steps(33, end) forwards;
+  animation-delay: 5.5s;
+}
+
+.p4 {
+  animation:
+    typing 3s steps(55, end) forwards;
+  animation-delay: 6.8s;
+}
+
+@keyframes typing{
+  from{width: 0;}
+  to{width: 100%;}
 }
